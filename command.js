@@ -1,4 +1,5 @@
 import "dotenv/config";
+
 import { REST, Routes } from "discord.js";
 
 const commands = [
@@ -7,6 +8,7 @@ const commands = [
     description: "Replies with Pong!",
   },
 ];
+
 const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
 
 try {
